@@ -1,0 +1,10 @@
+GrandStrat-backend/
+.metadata/
+
+frontend/.vs
+frontend/node_modules
+frontend/package-lock.json
+frontend/package.json
+frontend/public/
+
+*~
