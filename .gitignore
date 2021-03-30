@@ -6,5 +6,6 @@ frontend/node_modules
 frontend/package-lock.json
 frontend/package.json
 frontend/public/
+frontend/README.md
 
 *~
