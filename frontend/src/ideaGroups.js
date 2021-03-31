@@ -1,0 +1,21 @@
+export const ideaGroups = [
+    { value: 'Administrative', label: 'Administrative'},
+    { value: 'Economic', label: 'Economic'},
+    { value: 'Expansion', label: 'Expansion'},
+    { value: 'Humanist', label: 'Humanist'},
+    { value: 'Innovative', label: 'Innovative'},
+    { value: 'Religious', label: 'Religious'},
+    { value: 'Diplomatic', label: 'Diplomatic'},
+    { value: 'Espionage', label: 'Espionage'},
+    { value: 'Exploration', label: 'Exploration'},
+    { value: 'Influence', label: 'Influence'},
+    { value: 'Maritime', label: 'Maritime'},
+    { value: 'Trade', label: 'Trade'},
+    { value: 'Aristocratic', label: 'Aristocratic'},
+    { value: 'Defensive', label: 'Defensive'},
+    { value: 'Naval', label: 'Naval'},
+    { value: 'Offensive', label: 'Offensive'},
+    { value: 'Plutocratic', label: 'Plutocratic'},
+    { value: 'Quality', label: 'Quality'},
+    { value: 'Quantity', label: 'Quantity'}
+]

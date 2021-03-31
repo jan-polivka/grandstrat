@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Form } from 'react-bootstrap';
 
 export class StratFormFirst extends Component {
+
     continue = e => {
         e.preventDefault();
         this.props.nextStep();
@@ -15,7 +16,7 @@ export class StratFormFirst extends Component {
                     <Form.Group>
                         <Form.Label>The name</Form.Label>
                         <Form.Control
-                            as="textarea"
+                            type="text"
                             onChange={handleChange('country')}
                             defaultValue={values.country}
                         />

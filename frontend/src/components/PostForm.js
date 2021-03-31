@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios'
 
@@ -12,24 +11,18 @@ import axios from 'axios'
 
 const PostForm = props => {
 
-    const [respo, setResp] = useState([])
+    const noteObject = {
+        content: props.note
+    }
 
-    useEffect (() => {
-        console.log('effect')
-        axios
-            .get('http://localhost:8080/strattest')
-            .then(response => {
-                console.log('promise fulfilled')
-                setResp(response.data)
-            })
-    },[])
-    console.log('render', respo, 'respo')
+    axios
+        .post('http://localhost:8080/posttest', noteObject)
+        .then(response => {
+            console.log(response)
+        })
 
     return (
-        <div>
-            Hello <br/>
-            {respo.name}           
-        </div>
+        <div>Sent!</div>        
     );
 };
 

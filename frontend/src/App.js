@@ -7,7 +7,7 @@ import {
    from 'react-router-dom';
 import StratView from './components/StratView';
 import Create from './components/Create';
-import StratFormParent from './components/StratFormParent';
+import SearchSelect from './components/SearchSelect';
 
 function App() {
 
@@ -24,11 +24,13 @@ function App() {
           <Link style={padding} to="/">Home</Link>
           <Link style={padding} to="/StratView">Strats uploaded</Link>
           <Link style={padding} to="/Create">Create a new strat</Link>
+          <Link style={padding} to="/SearchSelect">SearchSelect</Link>
         </div>
 
         <Switch>
           <Route path="/StratView" component={StratView} />
           <Route path="/Create" component={Create} />
+          <Route path="/SearchSelect" component={SearchSelect} />
           <Route path="/" component={Welcome} />
         </Switch>
       </Router>
