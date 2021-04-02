@@ -1,4 +1,5 @@
 export const ideaGroups = [
+    { value: '', label: ''},
     { value: 'Administrative', label: 'Administrative'},
     { value: 'Economic', label: 'Economic'},
     { value: 'Expansion', label: 'Expansion'},

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import { Table } from 'react-bootstrap';
 import axios from 'axios'
 
 const StratView = props => {
@@ -16,17 +16,30 @@ const StratView = props => {
             })
     },[])
     console.log('render', respo, 'respo')
-
+    console.log('render', typeof(respo), 'respo')
 
     return (
-        <div>
-            This is the strat view
-        </div>
+        <React.Fragment>
+            <Table striped bordered hover size="sm">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Sheet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {respo.map((item) => {
+                        return(
+                        <tr key={item.id}>
+                            <th>{item.id}</th>
+                            <th>{item.name}</th>
+                        </tr>
+                        )
+                    })}
+                </tbody>
+            </Table>
+        </React.Fragment>
     );
-};
-
-StratView.propTypes = {
-    
 };
 
 export default StratView;

@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import Welcome from './components/Welcome';
 import { 
   BrowserRouter as Router,
-  Link, Redirect, Route, Switch }
+  Link, Route, Switch }
    from 'react-router-dom';
 import StratView from './components/StratView';
 import Create from './components/Create';
-import SearchSelect from './components/SearchSelect';
 
 function App() {
 
@@ -24,13 +22,11 @@ function App() {
           <Link style={padding} to="/">Home</Link>
           <Link style={padding} to="/StratView">Strats uploaded</Link>
           <Link style={padding} to="/Create">Create a new strat</Link>
-          <Link style={padding} to="/SearchSelect">SearchSelect</Link>
         </div>
 
         <Switch>
           <Route path="/StratView" component={StratView} />
           <Route path="/Create" component={Create} />
-          <Route path="/SearchSelect" component={SearchSelect} />
           <Route path="/" component={Welcome} />
         </Switch>
       </Router>

@@ -8,7 +8,9 @@ export class StratFormParent extends Component {
     state = {
         step: 1,
         country: '',
-        idea: ''
+        idea: '',
+        idea2: '',
+        tag: ''
     }
 
     nextStep = () => {
@@ -32,8 +34,8 @@ export class StratFormParent extends Component {
     render() {
 
         const {step} = this.state;
-        const {country, idea} = this.state;
-        const values = {country, idea}
+        const {country, idea, idea2, tag} = this.state;
+        const values = {country, idea, idea2, tag}
         
         switch(step){
             case 1:

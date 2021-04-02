@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Form } from 'react-bootstrap';
 
+import {ideaGroups} from '../ideaGroups';
+
 export class StratFormFirst extends Component {
 
     continue = e => {
@@ -8,24 +10,44 @@ export class StratFormFirst extends Component {
         this.props.nextStep();
     }
 
+    options = ideaGroups.map((item) => {
+        return (
+            <option key={item.label} value={item.value}>
+                {item.label}
+            </option>
+        )
+    })
+
     render() {
+
         const {values, handleChange} = this.props;
+
         return (
             <React.Fragment>
                 <Form>
                     <Form.Group>
-                        <Form.Label>The name</Form.Label>
+                        <Form.Label>Country</Form.Label>
                         <Form.Control
                             type="text"
                             onChange={handleChange('country')}
                             defaultValue={values.country}
                         />
-                        <Form.Label>The idea</Form.Label>
+                        <Form.Label>First Idea</Form.Label>
                         <Form.Control
-                            as="textarea"
+                            as="select"
+                            value={values.idea}
                             onChange={handleChange('idea')}
-                            defaultValue={values.idea}
-                        />
+                        >
+                            {this.options}
+                        </Form.Control>
+                        <Form.Label>Second Idea</Form.Label>
+                        <Form.Control
+                            as="select"
+                            value={values.idea2}
+                            onChange={handleChange('idea2')}
+                        >
+                            {this.options}
+                        </Form.Control>
                     </Form.Group>
                     <Button 
                         variant="primary" 

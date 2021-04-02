@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import axios from 'axios'
+import React from 'react';
 import StratFormParent from './StratFormParent';
 
 //I want to create a form here

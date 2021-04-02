@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Table } from 'react-bootstrap';
 
 export class StratFormSecond extends Component {
     continue = e => {
@@ -13,11 +13,29 @@ export class StratFormSecond extends Component {
     }
 
     render() {
-        const {values, handleChange} = this.props;
+        const {values} = this.props;
         return (
             <React.Fragment>
                 <Form>
                     Hello<br/>
+                    <Table striped bordered hover size="sm">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Idea</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <th>{values.idea}</th>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <th>{values.idea2}</th>
+                            </tr>
+                        </tbody>
+                    </Table>
                     <Button 
                         variant="secondary" 
                         type="submit"
