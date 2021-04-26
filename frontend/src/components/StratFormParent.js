@@ -8,7 +8,7 @@ export class StratFormParent extends Component {
     state = {
         step: 1,
         country: '',
-        idea: '',
+        idea1: '',
         idea2: '',
         tag: ''
     }
@@ -34,8 +34,8 @@ export class StratFormParent extends Component {
     render() {
 
         const {step} = this.state;
-        const {country, idea, idea2, tag} = this.state;
-        const values = {country, idea, idea2, tag}
+        const {country, idea1, idea2, tag} = this.state;
+        const values = {country, idea1, idea2, tag}
         
         switch(step){
             case 1:
@@ -61,6 +61,10 @@ export class StratFormParent extends Component {
                     //I want to also make a POST request here though
                     <StratFormThird
                         values={values}/>
+                )
+            case 4:
+                return (
+                    <div>This is case 4</div>
                 )
         }
     }

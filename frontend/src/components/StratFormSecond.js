@@ -28,7 +28,7 @@ export class StratFormSecond extends Component {
                         <tbody>
                             <tr>
                                 <th>1</th>
-                                <th>{values.idea}</th>
+                                <th>{values.idea1}</th>
                             </tr>
                             <tr>
                                 <th>2</th>

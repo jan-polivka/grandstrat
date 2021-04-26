@@ -35,8 +35,8 @@ export class StratFormFirst extends Component {
                         <Form.Label>First Idea</Form.Label>
                         <Form.Control
                             as="select"
-                            value={values.idea}
-                            onChange={handleChange('idea')}
+                            value={values.idea1}
+                            onChange={handleChange('idea1')}
                         >
                             {this.options}
                         </Form.Control>

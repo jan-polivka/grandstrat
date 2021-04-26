@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
+import { Accordion, Button, Card } from 'react-bootstrap';
 import axios from 'axios'
 
 const StratView = props => {
@@ -15,29 +15,29 @@ const StratView = props => {
                 setResp(response.data)
             })
     },[])
-    console.log('render', respo, 'respo')
-    console.log('render', typeof(respo), 'respo')
 
     return (
         <React.Fragment>
-            <Table striped bordered hover size="sm">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Sheet</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {respo.map((item) => {
-                        return(
-                        <tr key={item.id}>
-                            <th>{item.id}</th>
-                            <th>{item.name}</th>
-                        </tr>
-                        )
-                    })}
-                </tbody>
-            </Table>
+            <Accordion>
+                {respo.map((item) => { 
+                    return (
+                    <Card key={item.id}>
+                        <Card.Header>
+                        <Accordion.Toggle as={Button} variant="link" eventKey={item.id}>
+                            {item.country}
+                        </Accordion.Toggle>
+                        </Card.Header>
+                        <Accordion.Collapse eventKey={item.id}>
+                        <Card.Body>
+                            {item.idea1}
+                            <br></br>
+                            {item.idea2}
+                        </Card.Body>
+                        </Accordion.Collapse>
+                    </Card>
+                    )
+                })}
+            </Accordion>
         </React.Fragment>
     );
 };

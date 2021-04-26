@@ -7,7 +7,10 @@ export class StratFormThird extends Component {
         const {values} = this.props;
         return (
             <React.Fragment>
-                <PostForm note={values.country} />
+                <PostForm 
+                    country={values.country}
+                    idea1={values.idea1}
+                    idea2={values.idea2} />
             </React.Fragment>
         );
     }

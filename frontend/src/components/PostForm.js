@@ -1,19 +1,28 @@
 import axios from 'axios'
+import React, {useEffect} from 'react';
 
 const PostForm = props => {
 
     const noteObject = {
-        content: props.note
+        country: props.country,
+        idea1: props.idea1,
+        idea2: props.idea2
     }
 
-    axios
-        .post('http://localhost:8080/posttest', noteObject)
-        .then(response => {
-            console.log(response)
-        })
+    //how does this work? why do I need to have useEffect
+    //I think useEffect is a hook
+    useEffect (() => {
+        axios
+            .post('http://localhost:8080/posttest', noteObject)
+            .then(response => {
+                console.log(response)
+            })
+    },[])
 
     return (
-        <div>Sent!</div>        
+        <React.Fragment>
+            <div>Sent!</div>
+        </React.Fragment>      
     );
 };
 
