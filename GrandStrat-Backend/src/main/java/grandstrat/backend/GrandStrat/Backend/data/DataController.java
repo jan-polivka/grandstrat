@@ -25,8 +25,8 @@ public class DataController {
 	}
 	
 	@CrossOrigin
-	@PostMapping(path="/posttest")
-	public String addNewStrat (@RequestBody String strat) throws JsonMappingException, JsonProcessingException
+	@PostMapping(path="/new-strat")
+	public String newStrat(@RequestBody String strat) throws JsonMappingException, JsonProcessingException
 	{
 		ObjectMapper objectMapper = new ObjectMapper();
 		
