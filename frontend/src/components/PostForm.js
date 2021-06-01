@@ -21,7 +21,7 @@ const PostForm = props => {
 
     return (
         <React.Fragment>
-            <div>Sent!</div>
+            <div>Done!</div>
         </React.Fragment>      
     );
 };

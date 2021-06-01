@@ -57,13 +57,13 @@ export class StratFormParent extends Component {
                 )
             case 3:
                 return (
-                    //Just have done! Click View strats in the top bar menu to get started?
-                    //I want to also make a POST request here though
                     <StratFormThird
                         values={values}/>
                 )
             case 4:
                 return (
+                    //This is very clunky, what to do about this?
+                    //Create a default case?
                     <div>This is case 4</div>
                 )
         }

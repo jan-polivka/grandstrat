@@ -9,7 +9,7 @@ const StratView = props => {
     useEffect (() => {
         console.log('effect')
         axios
-            .get('http://localhost:8080/strattest')
+            .get('http://localhost:8080/strats')
             .then(response => {
                 console.log('promise fulfilled')
                 setResp(response.data)

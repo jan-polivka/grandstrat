@@ -15,7 +15,16 @@ public class StratData {
 	private String country;
 	private String idea1;
 	private String idea2;
-		
+
+	public StratData() {
+	}
+
+	public StratData(String country, String idea1, String idea2) {
+		this.country = country;
+		this.idea1 = idea1;
+		this.idea2 = idea2;
+	}
+
 	public int getId() {
 		return id;
 	}
