@@ -7,4 +7,13 @@ frontend/package.json
 frontend/public/
 frontend/README.md
 
+
+GrandStrat-Backend/.gitignore
+GrandStrat-Backend/.mvn/
+GrandStrat-Backend/bin/
+GrandStrat-Backend/mvnw
+GrandStrat-Backend/mvnw.cmd
+GrandStrat-Backend/pom.xml
+GrandStrat-Backend/src/main/resources/
+
 *~
