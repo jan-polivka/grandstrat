@@ -8,7 +8,7 @@
     - Test-driven
     
 ## To do:
-    - Write a test for "addNewStrat" and refactor "addNewStrat"
+    - 
     
 ## Future plans:
 	- Register + Login
