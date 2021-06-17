@@ -1,18 +1,18 @@
 # GrandStrat
 
 ## Foundation:
-   	- JavaScript for presentation, Java for calculation
-    - Incremental improvement
-    - Refactor is inevitable
-    - REST API
-    - Test-driven
+	- JavaScript for presentation, Java for calculation
+	- Incremental improvement
+	- Refactor is inevitable
+	- REST API
+	- Test-driven
     
 ## To do:
-    - 
+	- Register + Login
     
 ## Future plans:
-	- Register + Login
 	- Database migration?
-    - Logging
+	- Logging for errors
 	- NavBar for Frontend
+	- Improved strategy creation
     
